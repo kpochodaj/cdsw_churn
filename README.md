@@ -4,34 +4,40 @@ This is the CML port of the Refractor prototype which is part of the [Interpreta
 report from Cloudera Fast Forward Labs](https://clients.fastforwardlabs.com/ff06/report).
 
 ### Setup
+Add new profile with more resources.
+Go to Admin Panel (leave project first).
+In Engines tab add new Engine profile with 2 CPUs and 8GB memory - click Add button.
+Navigate back to your project (Projects menu).
+
 Start a Python 3 Session with at least 8GB of memory and __run the utils/setup.py code__.  
 This will create the minimum setup to use existing, pretrained models.
 
 ### 1 Ingest Data
 Open `1_data_ingest.py` in a workbench: python3, 1 CPU, 2 GB.
 
-Run the file. 
+Run the file. Stop session.
 
 ### 2 Explore Data
-Open a jupyter notebook at open the `2_data_exploration.ipynb` file.
+Create new session (Open Workbench) with Jupyter notebook selected as the editor.
+In jupyter notebook open the `2_data_exploration.ipynb` and run it (Cell/Run All)
 
 ### 3 Train Model using Experiments
-The goal of the task is to compare performance of two algorhythms and select the model with better precision.
+The goal of the task is to compare performance of two algorhithms and select the model with better precision.
 
-First open 3_train_model_job.py from Files menu.Can you identify parts of code that mark parameters and output to be captured within experiment?
+First open 3_train_model_args.py from Files menu. Can you identify parts of code that mark parameters and output to be captured within experiment?
 
 Run new experiment from Experiment menu.
 
-Select 3_train_model_job.py for script.
+Select 3_train_model_args.py for script.
 
-The code accepts two arguments - algorhythm and dataset.
+The code accepts two arguments - algorhithm and dataset.
 
 In first experiment use the following:
 linear telco
 
 Select Python 3 as an Engine Kernel and 1vCPU / 2 GB Memory as Engine Profile.
 
-Run experiment. 
+Run experiment.
 
 While the experiment is being executet click on Run ID to analyse the progress.
 
@@ -66,7 +72,7 @@ In the deployed Explainer model -> Settings note (copy) the "Access Key" (ie. mu
 ### 5 Deploy Application
 
 From the Project level click on "Open Workbench" (note you don't actually have to Launch a session) in order to edit a file.
-Select the flask/single_view.html file and paste the Access Key in at line 19. 
+Select the flask/single_view.html file and paste the Access Key in at line 19.
 Save and go back to the Project.  
 
 Go to the **Applications** section and select "New Application" with the following:
@@ -84,7 +90,7 @@ If you created your own model (see above)
 
 After the Application deploys, click on the blue-arrow next to the name.  The initial view is a table of rows selected at  random from the dataset.  This shows a global view of which features are most important for the predictor model.  
 
-Clicking on any single row will show a "local" interpretabilty of a particular instance.  Here you 
+Clicking on any single row will show a "local" interpretabilty of a particular instance.  Here you
 can see how adjusting any one of the features will change the instance's churn prediction.  
 
 * Don't forget** to stop your Models and Experiments once you are done to save resources for your colleagues.  
@@ -142,4 +148,11 @@ Click on the background and press Start button from Operate menu on the left
 
 Wait for data to flow, increasing number of messages in Response box linking InvokeHTTP with PutHDFS suggest positve outcome
 
-Open Monitoring tab in Explainer model from Model section, validate that the number of requests is increasing
+Open Monitoring tab in Explainer model from Model section, validate that the number of requests is increasing.
+
+To test deployment of the model and its impact on real-time processes click Deploy new build button in Monitoring tab, leave default settings and click Deploy model. Monitor the state of deployment and flow in Nifi (Refresh on backgroup updates the figures ad-hoc). Notice how many messages are rejected due to lack of availability of REST API of the model.
+
+Stop flow in NiFi.
+
+Leave project. Go to Admin panel. Review content of Users, Activity and Models tabs.
+Stop models.
