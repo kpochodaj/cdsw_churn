@@ -1,0 +1,22 @@
+﻿customerID;gender;SeniorCitizen;Partner;Dependents;tenure;PhoneService;MultipleLines;InternetService;OnlineSecurity;OnlineBackup;DeviceProtection;TechSupport;StreamingTV;StreamingMovies;Contract;PaperlessBilling;PaymentMethod;MonthlyCharges;TotalCharges
+9919-FZDED;Male;1;Yes;No;72;Yes;Yes;DSL;Yes;Yes;Yes;No;Yes;Yes;Two year;Yes;Credit card (automatic);84.1;5981.65
+9919-KNPOO;Female;0;Yes;No;21;Yes;Yes;Fiber optic;No;No;No;No;Yes;Yes;Month-to-month;Yes;Electronic check;94.3;1948.35
+9919-YLNNG;Female;0;No;No;42;Yes;No;Fiber optic;No;Yes;Yes;Yes;Yes;Yes;Month-to-month;Yes;Bank transfer (automatic);103.8;4327.5
+9921-EZKBY;Male;0;No;Yes;33;Yes;Yes;Fiber optic;Yes;No;Yes;No;No;Yes;Month-to-month;Yes;Bank transfer (automatic);95.3;3275.15
+9921-QFQUL;Female;0;Yes;No;23;Yes;Yes;Fiber optic;No;No;Yes;No;No;Yes;Month-to-month;No;Mailed check;90.15;2044.95
+9924-JPRMC;Male;0;No;No;72;Yes;Yes;Fiber optic;Yes;Yes;Yes;Yes;Yes;Yes;Two year;Yes;Electronic check;118.2;8547.15
+9926-PJHDQ;Female;0;Yes;Yes;72;Yes;Yes;DSL;No;No;Yes;No;Yes;Yes;Two year;Yes;Bank transfer (automatic);76.8;5468.45
+9927-DSWDF;Male;0;Yes;No;22;Yes;No;Fiber optic;Yes;Yes;No;Yes;Yes;Yes;Month-to-month;Yes;Electronic check;104.6;2180.55
+9928-BZVLZ;Female;0;No;No;12;No;No phone service;DSL;Yes;No;Yes;Yes;No;Yes;Two year;No;Mailed check;49.85;552.1
+9929-PLVPA;Female;0;No;Yes;4;Yes;No;No;No internet service;No internet service;No internet service;No internet service;No internet service;No internet service;Month-to-month;No;Credit card (automatic);20.4;94.5
+9931-DCEZH;Male;0;No;Yes;28;Yes;No;DSL;No;Yes;No;Yes;No;No;One year;Yes;Credit card (automatic);54.4;1516.6
+9931-KGHOA;Female;0;Yes;No;46;Yes;Yes;DSL;Yes;No;No;No;No;No;Month-to-month;No;Bank transfer (automatic);55;2473.95
+9932-WBWIK;Male;0;No;No;11;Yes;No;No;No internet service;No internet service;No internet service;No internet service;No internet service;No internet service;Month-to-month;No;Mailed check;20.35;215.25
+9933-QRGTX;Female;0;Yes;No;60;Yes;No;Fiber optic;Yes;No;No;Yes;Yes;Yes;Two year;Yes;Electronic check;97.2;5611.75
+9938-EKRGF;Female;0;No;No;15;Yes;No;DSL;Yes;Yes;Yes;Yes;Yes;Yes;Month-to-month;No;Mailed check;84.45;1287.85
+9938-PRCVK;Female;0;Yes;Yes;41;Yes;No;No;No internet service;No internet service;No internet service;No internet service;No internet service;No internet service;Two year;No;Bank transfer (automatic);19.7;804.25
+9938-TKDGL;Male;0;Yes;Yes;68;Yes;No;Fiber optic;Yes;No;No;Yes;Yes;Yes;Two year;Yes;Electronic check;99.55;6668
+9938-ZREHM;Female;0;Yes;No;37;Yes;Yes;DSL;No;Yes;No;Yes;No;Yes;One year;No;Mailed check;72.1;2658.4
+9943-VSZUV;Male;1;No;No;67;Yes;Yes;Fiber optic;No;No;No;No;No;No;Month-to-month;Yes;Mailed check;75.7;5060.85
+9944-AEXBM;Male;0;No;No;32;Yes;Yes;Fiber optic;No;No;No;No;No;Yes;Month-to-month;Yes;Bank transfer (automatic);85.65;2664.3
+9945-PSVIP;Female;0;Yes;Yes;25;Yes;No;No;No internet service;No internet service;No internet service;No internet service;No internet service;No internet service;Two year;Yes;Mailed check;18.7;383.65
